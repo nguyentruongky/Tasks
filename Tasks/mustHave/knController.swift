@@ -116,8 +116,6 @@ extension knCustomTableController {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { return 100 }
 }
 
-
-
 extension UINavigationController {
     
     func setBarHiddenWhenScrolling(inScrollView scrollView: UIScrollView) {

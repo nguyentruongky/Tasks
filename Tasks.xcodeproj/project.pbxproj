@@ -11,7 +11,7 @@
 		C1A5926220AAD71D00120D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A5926120AAD71D00120D6D /* Assets.xcassets */; };
 		C1A5926520AAD71D00120D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A5926320AAD71D00120D6D /* LaunchScreen.storyboard */; };
 		C1A5930F20AAD79400120D6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A5930D20AAD79400120D6D /* Main.storyboard */; };
-		C1A5931020AAD79400120D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5930E20AAD79400120D6D /* ViewController.swift */; };
+		C1A5931020AAD79400120D6D /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5930E20AAD79400120D6D /* TaskList.swift */; };
 		C1A5932620AAD8EC00120D6D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5931220AAD8EC00120D6D /* Global.swift */; };
 		C1A5932720AAD8EC00120D6D /* knConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5931320AAD8EC00120D6D /* knConstraints.swift */; };
 		C1A5932820AAD8EC00120D6D /* knController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5931420AAD8EC00120D6D /* knController.swift */; };
@@ -35,6 +35,7 @@
 		C1A5933B20AB7D2F00120D6D /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5933A20AB7D2F00120D6D /* CreateTaskView.swift */; };
 		C1A5933D20ABE23700120D6D /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5933C20ABE23700120D6D /* StateView.swift */; };
 		C1A5934120ABE2CA00120D6D /* FunctionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5934020ABE2CA00120D6D /* FunctionView.swift */; };
+		C1A5934320AD843900120D6D /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5934220AD843900120D6D /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +45,7 @@
 		C1A5926420AAD71D00120D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1A5926620AAD71D00120D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A5930D20AAD79400120D6D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C1A5930E20AAD79400120D6D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1A5930E20AAD79400120D6D /* TaskList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		C1A5931220AAD8EC00120D6D /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		C1A5931320AAD8EC00120D6D /* knConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knConstraints.swift; sourceTree = "<group>"; };
 		C1A5931420AAD8EC00120D6D /* knController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knController.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		C1A5933A20AB7D2F00120D6D /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
 		C1A5933C20ABE23700120D6D /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
 		C1A5934020ABE2CA00120D6D /* FunctionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionView.swift; sourceTree = "<group>"; };
+		C1A5934220AD843900120D6D /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +108,8 @@
 				C1A5926320AAD71D00120D6D /* LaunchScreen.storyboard */,
 				C1A5926620AAD71D00120D6D /* Info.plist */,
 				C1A5930D20AAD79400120D6D /* Main.storyboard */,
-				C1A5930E20AAD79400120D6D /* ViewController.swift */,
+				C1A5930E20AAD79400120D6D /* TaskList.swift */,
+				C1A5934220AD843900120D6D /* TaskCell.swift */,
 				C1A5933C20ABE23700120D6D /* StateView.swift */,
 				C1A5933A20AB7D2F00120D6D /* CreateTaskView.swift */,
 				C1A5934020ABE2CA00120D6D /* FunctionView.swift */,
@@ -212,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1A5931020AAD79400120D6D /* ViewController.swift in Sources */,
+				C1A5931020AAD79400120D6D /* TaskList.swift in Sources */,
 				C1A5932E20AAD8ED00120D6D /* knUIButton.swift in Sources */,
 				C1A5933220AAD8ED00120D6D /* knUISearchBar.swift in Sources */,
 				C1A5933B20AB7D2F00120D6D /* CreateTaskView.swift in Sources */,
@@ -236,6 +239,7 @@
 				C1A5932A20AAD8ED00120D6D /* knFont.swift in Sources */,
 				C1A5932920AAD8EC00120D6D /* knDate.swift in Sources */,
 				C1A5933320AAD8ED00120D6D /* knUITextField.swift in Sources */,
+				C1A5934320AD843900120D6D /* TaskCell.swift in Sources */,
 				C1A5932720AAD8EC00120D6D /* knConstraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

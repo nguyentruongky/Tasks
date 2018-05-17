@@ -9,6 +9,32 @@
 import UIKit
 
 extension UIButton {
+    func animateZooming() {
+        guard let parentView = superview,
+            let edge = imageView?.frame.size.height else { return }
+        let circo = UIView(frame: CGRect(x: 0, y: 0, width: edge, height: edge))
+        circo.backgroundColor = UIColor.lightGray.withAlphaComponent(0.1)
+        
+        parentView.addSubviews(views: circo)
+        circo.center = center
+        circo.createRoundCorner(edge / 2)
+        let level: CGFloat = 2.5
+        UIView.animate(withDuration: 0.3, animations: {
+            circo.transform = CGAffineTransform(scaleX: level, y: level)
+        }, completion: { _ in
+            circo.removeFromSuperview()
+        })
+    }
+    
+    func animateRotation(angle: CGFloat) {
+        UIView.animate(withDuration: 0.3, animations: { [weak self] in
+            guard let `self` = self else { return }
+            self.transform = self.transform.rotated(by: angle)
+        })
+    }
+}
+
+extension UIButton {
 
     func setTitle(_ title: String) {
         setTitle(title, for: .normal)
